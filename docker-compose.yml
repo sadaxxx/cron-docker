@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  cronworker:
+    container_name: cron
+    build:
+      context: ./cron
+      dockerfile: Dockerfile
+#    volumes:
+#      - ./cron/log:/cronlog
